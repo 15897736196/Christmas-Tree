@@ -1,0 +1,1859 @@
+body{
+  position: relative;
+}
+.snow {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-image: url("./snow.svg");
+  background-size: cover;
+}
+
+@keyframes move1 {
+  0% {
+    transform: translate(var(--left-ini), -5vh) scale(var(--size));
+  }
+  100% {
+    transform: translate(var(--left-end), 100vh);
+  }
+}
+
+.snow:nth-child(1) {
+  --left-ini: 0vw;
+  --left-end: -8vw;
+  --size: 1;
+  left: 69vw;
+  animation: move1 23s linear -7s infinite;
+}
+
+.snow:nth-child(2) {
+  --left-ini: -6vw;
+  --left-end: -5vw;
+  --size: 1;
+  left: 40vw;
+  animation: move1 11s linear -7s infinite;
+}
+
+.snow:nth-child(3) {
+  --left-ini: 6vw;
+  --left-end: 9vw;
+  --size: 2;
+  left: 29vw;
+  animation: move1 28s linear -3s infinite;
+}
+
+.snow:nth-child(4) {
+  --left-ini: 0vw;
+  --left-end: -6vw;
+  --size: 3;
+  left: 63vw;
+  animation: move1 9s linear -2s infinite;
+}
+
+.snow:nth-child(5) {
+  --left-ini: 1vw;
+  --left-end: 2vw;
+  --size: 2;
+  left: 48vw;
+  animation: move1 25s linear -7s infinite;
+}
+
+.snow:nth-child(6) {
+  --left-ini: 3vw;
+  --left-end: -7vw;
+  --size: 3;
+  left: 77vw;
+  animation: move1 18s linear -1s infinite;
+}
+
+.snow:nth-child(7) {
+  --left-ini: -7vw;
+  --left-end: -2vw;
+  --size: 1;
+  left: 22vw;
+  animation: move1 24s linear -4s infinite;
+}
+
+.snow:nth-child(8) {
+  --left-ini: -5vw;
+  --left-end: 3vw;
+  --size: 2;
+  left: 65vw;
+  animation: move1 15s linear -9s infinite;
+}
+
+.snow:nth-child(9) {
+  --left-ini: -8vw;
+  --left-end: -5vw;
+  --size: 2;
+  left: 75vw;
+  animation: move1 22s linear -3s infinite;
+}
+
+.snow:nth-child(10) {
+  --left-ini: 4vw;
+  --left-end: 7vw;
+  --size: 2;
+  left: 68vw;
+  animation: move1 11s linear -2s infinite;
+}
+
+.snow:nth-child(11) {
+  --left-ini: -8vw;
+  --left-end: 0vw;
+  --size: 2;
+  left: 59vw;
+  animation: move1 10s linear -7s infinite;
+}
+
+.snow:nth-child(12) {
+  --left-ini: 2vw;
+  --left-end: -8vw;
+  --size: 3;
+  left: 48vw;
+  animation: move1 28s linear -9s infinite;
+}
+
+.snow:nth-child(13) {
+  --left-ini: -2vw;
+  --left-end: 9vw;
+  --size: 2;
+  left: 82vw;
+  animation: move1 23s linear -1s infinite;
+}
+
+.snow:nth-child(14) {
+  --left-ini: -3vw;
+  --left-end: 6vw;
+  --size: 1;
+  left: 83vw;
+  animation: move1 13s linear -9s infinite;
+}
+
+.snow:nth-child(15) {
+  --left-ini: 1vw;
+  --left-end: 1vw;
+  --size: 1;
+  left: 12vw;
+  animation: move1 19s linear -10s infinite;
+}
+
+.snow:nth-child(16) {
+  --left-ini: -8vw;
+  --left-end: 9vw;
+  --size: 3;
+  left: 77vw;
+  animation: move1 15s linear -4s infinite;
+}
+
+.snow:nth-child(17) {
+  --left-ini: -4vw;
+  --left-end: -3vw;
+  --size: 2;
+  left: 8vw;
+  animation: move1 11s linear -5s infinite;
+}
+
+.snow:nth-child(18) {
+  --left-ini: 9vw;
+  --left-end: 1vw;
+  --size: 1;
+  left: 24vw;
+  animation: move1 17s linear -3s infinite;
+}
+
+.snow:nth-child(19) {
+  --left-ini: 7vw;
+  --left-end: -1vw;
+  --size: 3;
+  left: 50vw;
+  animation: move1 28s linear -7s infinite;
+}
+
+.snow:nth-child(20) {
+  --left-ini: 0vw;
+  --left-end: 4vw;
+  --size: 2;
+  left: 37vw;
+  animation: move1 11s linear -1s infinite;
+}
+
+.snow:nth-child(21) {
+  --left-ini: 10vw;
+  --left-end: 6vw;
+  --size: 2;
+  left: 34vw;
+  animation: move1 26s linear -6s infinite;
+}
+
+.snow:nth-child(22) {
+  --left-ini: 5vw;
+  --left-end: 1vw;
+  --size: 3;
+  left: 51vw;
+  animation: move1 20s linear -5s infinite;
+}
+
+.snow:nth-child(23) {
+  --left-ini: 8vw;
+  --left-end: 3vw;
+  --size: 1;
+  left: 23vw;
+  animation: move1 22s linear -7s infinite;
+}
+
+.snow:nth-child(24) {
+  --left-ini: -2vw;
+  --left-end: 4vw;
+  --size: 3;
+  left: 51vw;
+  animation: move1 15s linear -10s infinite;
+}
+
+.snow:nth-child(25) {
+  --left-ini: 6vw;
+  --left-end: 3vw;
+  --size: 2;
+  left: 66vw;
+  animation: move1 21s linear -1s infinite;
+}
+
+.snow:nth-child(26) {
+  --left-ini: -3vw;
+  --left-end: 8vw;
+  --size: 2;
+  left: 81vw;
+  animation: move1 24s linear -3s infinite;
+}
+
+.snow:nth-child(27) {
+  --left-ini: 2vw;
+  --left-end: 3vw;
+  --size: 2;
+  left: 51vw;
+  animation: move1 13s linear -1s infinite;
+}
+
+.snow:nth-child(28) {
+  --left-ini: -1vw;
+  --left-end: -7vw;
+  --size: 2;
+  left: 89vw;
+  animation: move1 16s linear -9s infinite;
+}
+
+.snow:nth-child(29) {
+  --left-ini: 7vw;
+  --left-end: 6vw;
+  --size: 3;
+  left: 66vw;
+  animation: move1 20s linear -5s infinite;
+}
+
+.snow:nth-child(30) {
+  --left-ini: 5vw;
+  --left-end: -2vw;
+  --size: 3;
+  left: 28vw;
+  animation: move1 10s linear -3s infinite;
+}
+
+.snow:nth-child(31) {
+  --left-ini: 6vw;
+  --left-end: -4vw;
+  --size: 3;
+  left: 49vw;
+  animation: move1 25s linear -5s infinite;
+}
+
+.snow:nth-child(32) {
+  --left-ini: 8vw;
+  --left-end: 0vw;
+  --size: 1;
+  left: 96vw;
+  animation: move1 10s linear -1s infinite;
+}
+
+.snow:nth-child(33) {
+  --left-ini: 2vw;
+  --left-end: -2vw;
+  --size: 2;
+  left: 61vw;
+  animation: move1 28s linear -2s infinite;
+}
+
+.snow:nth-child(34) {
+  --left-ini: -7vw;
+  --left-end: 10vw;
+  --size: 3;
+  left: 81vw;
+  animation: move1 24s linear -2s infinite;
+}
+
+.snow:nth-child(35) {
+  --left-ini: 10vw;
+  --left-end: -9vw;
+  --size: 2;
+  left: 74vw;
+  animation: move1 15s linear -8s infinite;
+}
+
+.snow:nth-child(36) {
+  --left-ini: -7vw;
+  --left-end: -1vw;
+  --size: 1;
+  left: 13vw;
+  animation: move1 27s linear -4s infinite;
+}
+
+.snow:nth-child(37) {
+  --left-ini: 8vw;
+  --left-end: -6vw;
+  --size: 1;
+  left: 1vw;
+  animation: move1 21s linear -1s infinite;
+}
+
+.snow:nth-child(38) {
+  --left-ini: -5vw;
+  --left-end: 2vw;
+  --size: 1;
+  left: 12vw;
+  animation: move1 23s linear -7s infinite;
+}
+
+.snow:nth-child(39) {
+  --left-ini: -2vw;
+  --left-end: -6vw;
+  --size: 3;
+  left: 28vw;
+  animation: move1 12s linear -2s infinite;
+}
+
+.snow:nth-child(40) {
+  --left-ini: 8vw;
+  --left-end: -5vw;
+  --size: 3;
+  left: 21vw;
+  animation: move1 20s linear -8s infinite;
+}
+
+.snow:nth-child(41) {
+  --left-ini: 10vw;
+  --left-end: 1vw;
+  --size: 3;
+  left: 78vw;
+  animation: move1 15s linear -10s infinite;
+}
+
+.snow:nth-child(42) {
+  --left-ini: -6vw;
+  --left-end: -9vw;
+  --size: 2;
+  left: 51vw;
+  animation: move1 21s linear -5s infinite;
+}
+
+.snow:nth-child(43) {
+  --left-ini: -2vw;
+  --left-end: -7vw;
+  --size: 2;
+  left: 12vw;
+  animation: move1 17s linear -10s infinite;
+}
+
+.snow:nth-child(44) {
+  --left-ini: -9vw;
+  --left-end: -1vw;
+  --size: 3;
+  left: 15vw;
+  animation: move1 23s linear -9s infinite;
+}
+
+.snow:nth-child(45) {
+  --left-ini: -1vw;
+  --left-end: -2vw;
+  --size: 3;
+  left: 84vw;
+  animation: move1 22s linear -1s infinite;
+}
+
+.snow:nth-child(46) {
+  --left-ini: -3vw;
+  --left-end: 1vw;
+  --size: 3;
+  left: 93vw;
+  animation: move1 15s linear -9s infinite;
+}
+
+.snow:nth-child(47) {
+  --left-ini: 9vw;
+  --left-end: 1vw;
+  --size: 2;
+  left: 54vw;
+  animation: move1 21s linear -8s infinite;
+}
+
+.snow:nth-child(48) {
+  --left-ini: 5vw;
+  --left-end: -3vw;
+  --size: 3;
+  left: 62vw;
+  animation: move1 9s linear -4s infinite;
+}
+
+.snow:nth-child(49) {
+  --left-ini: 10vw;
+  --left-end: 2vw;
+  --size: 2;
+  left: 82vw;
+  animation: move1 20s linear -7s infinite;
+}
+
+.snow:nth-child(50) {
+  --left-ini: 10vw;
+  --left-end: 3vw;
+  --size: 3;
+  left: 95vw;
+  animation: move1 12s linear -3s infinite;
+}
+
+.snow:nth-child(51) {
+  --left-ini: -5vw;
+  --left-end: 9vw;
+  --size: 2;
+  left: 59vw;
+  animation: move1 14s linear -1s infinite;
+}
+
+.snow:nth-child(52) {
+  --left-ini: -2vw;
+  --left-end: 7vw;
+  --size: 2;
+  left: 56vw;
+  animation: move1 13s linear -2s infinite;
+}
+
+.snow:nth-child(53) {
+  --left-ini: -1vw;
+  --left-end: 9vw;
+  --size: 3;
+  left: 98vw;
+  animation: move1 27s linear -3s infinite;
+}
+
+.snow:nth-child(54) {
+  --left-ini: 8vw;
+  --left-end: -2vw;
+  --size: 2;
+  left: 46vw;
+  animation: move1 17s linear -3s infinite;
+}
+
+.snow:nth-child(55) {
+  --left-ini: -2vw;
+  --left-end: -8vw;
+  --size: 1;
+  left: 66vw;
+  animation: move1 10s linear -4s infinite;
+}
+
+.snow:nth-child(56) {
+  --left-ini: 2vw;
+  --left-end: 9vw;
+  --size: 2;
+  left: 89vw;
+  animation: move1 23s linear -3s infinite;
+}
+
+.snow:nth-child(57) {
+  --left-ini: -2vw;
+  --left-end: -3vw;
+  --size: 1;
+  left: 56vw;
+  animation: move1 13s linear -9s infinite;
+}
+
+.snow:nth-child(58) {
+  --left-ini: -2vw;
+  --left-end: -4vw;
+  --size: 1;
+  left: 31vw;
+  animation: move1 25s linear -6s infinite;
+}
+
+.snow:nth-child(59) {
+  --left-ini: 8vw;
+  --left-end: 4vw;
+  --size: 1;
+  left: 95vw;
+  animation: move1 9s linear -4s infinite;
+}
+
+.snow:nth-child(60) {
+  --left-ini: 2vw;
+  --left-end: 6vw;
+  --size: 2;
+  left: 27vw;
+  animation: move1 18s linear -4s infinite;
+}
+
+.snow:nth-child(61) {
+  --left-ini: 6vw;
+  --left-end: 10vw;
+  --size: 2;
+  left: 73vw;
+  animation: move1 22s linear -2s infinite;
+}
+
+.snow:nth-child(62) {
+  --left-ini: -8vw;
+  --left-end: -8vw;
+  --size: 2;
+  left: 84vw;
+  animation: move1 25s linear -7s infinite;
+}
+
+.snow:nth-child(63) {
+  --left-ini: 2vw;
+  --left-end: 8vw;
+  --size: 1;
+  left: 77vw;
+  animation: move1 11s linear -8s infinite;
+}
+
+.snow:nth-child(64) {
+  --left-ini: -3vw;
+  --left-end: 5vw;
+  --size: 2;
+  left: 83vw;
+  animation: move1 11s linear -9s infinite;
+}
+
+.snow:nth-child(65) {
+  --left-ini: 3vw;
+  --left-end: 1vw;
+  --size: 3;
+  left: 74vw;
+  animation: move1 28s linear -4s infinite;
+}
+
+.snow:nth-child(66) {
+  --left-ini: 1vw;
+  --left-end: -5vw;
+  --size: 3;
+  left: 78vw;
+  animation: move1 22s linear -8s infinite;
+}
+
+.snow:nth-child(67) {
+  --left-ini: 3vw;
+  --left-end: -4vw;
+  --size: 1;
+  left: 59vw;
+  animation: move1 13s linear -9s infinite;
+}
+
+.snow:nth-child(68) {
+  --left-ini: 2vw;
+  --left-end: 1vw;
+  --size: 1;
+  left: 56vw;
+  animation: move1 25s linear -1s infinite;
+}
+
+.snow:nth-child(69) {
+  --left-ini: 2vw;
+  --left-end: 4vw;
+  --size: 2;
+  left: 56vw;
+  animation: move1 18s linear -9s infinite;
+}
+
+.snow:nth-child(70) {
+  --left-ini: 10vw;
+  --left-end: -6vw;
+  --size: 2;
+  left: 23vw;
+  animation: move1 23s linear -9s infinite;
+}
+
+.snow:nth-child(71) {
+  --left-ini: 4vw;
+  --left-end: 6vw;
+  --size: 2;
+  left: 43vw;
+  animation: move1 11s linear -8s infinite;
+}
+
+.snow:nth-child(72) {
+  --left-ini: 3vw;
+  --left-end: -3vw;
+  --size: 2;
+  left: 27vw;
+  animation: move1 18s linear -10s infinite;
+}
+
+.snow:nth-child(73) {
+  --left-ini: 8vw;
+  --left-end: 0vw;
+  --size: 3;
+  left: 90vw;
+  animation: move1 12s linear -1s infinite;
+}
+
+.snow:nth-child(74) {
+  --left-ini: 9vw;
+  --left-end: 7vw;
+  --size: 3;
+  left: 35vw;
+  animation: move1 13s linear -10s infinite;
+}
+
+.snow:nth-child(75) {
+  --left-ini: 5vw;
+  --left-end: -9vw;
+  --size: 3;
+  left: 37vw;
+  animation: move1 16s linear -9s infinite;
+}
+
+.snow:nth-child(76) {
+  --left-ini: 8vw;
+  --left-end: 5vw;
+  --size: 1;
+  left: 71vw;
+  animation: move1 9s linear -7s infinite;
+}
+
+.snow:nth-child(77) {
+  --left-ini: 0vw;
+  --left-end: -4vw;
+  --size: 1;
+  left: 48vw;
+  animation: move1 20s linear -5s infinite;
+}
+
+.snow:nth-child(78) {
+  --left-ini: 1vw;
+  --left-end: 2vw;
+  --size: 3;
+  left: 7vw;
+  animation: move1 22s linear -8s infinite;
+}
+
+.snow:nth-child(79) {
+  --left-ini: 5vw;
+  --left-end: 0vw;
+  --size: 3;
+  left: 15vw;
+  animation: move1 27s linear -3s infinite;
+}
+
+.snow:nth-child(80) {
+  --left-ini: -9vw;
+  --left-end: 0vw;
+  --size: 1;
+  left: 75vw;
+  animation: move1 13s linear -4s infinite;
+}
+
+.snow:nth-child(81) {
+  --left-ini: 2vw;
+  --left-end: -4vw;
+  --size: 2;
+  left: 49vw;
+  animation: move1 14s linear -2s infinite;
+}
+
+.snow:nth-child(82) {
+  --left-ini: -8vw;
+  --left-end: -1vw;
+  --size: 3;
+  left: 23vw;
+  animation: move1 19s linear -3s infinite;
+}
+
+.snow:nth-child(83) {
+  --left-ini: 8vw;
+  --left-end: -5vw;
+  --size: 2;
+  left: 76vw;
+  animation: move1 15s linear -7s infinite;
+}
+
+.snow:nth-child(84) {
+  --left-ini: -7vw;
+  --left-end: 4vw;
+  --size: 1;
+  left: 65vw;
+  animation: move1 28s linear -1s infinite;
+}
+
+.snow:nth-child(85) {
+  --left-ini: 3vw;
+  --left-end: 0vw;
+  --size: 2;
+  left: 26vw;
+  animation: move1 17s linear -7s infinite;
+}
+
+.snow:nth-child(86) {
+  --left-ini: -6vw;
+  --left-end: 4vw;
+  --size: 3;
+  left: 61vw;
+  animation: move1 13s linear -3s infinite;
+}
+
+.snow:nth-child(87) {
+  --left-ini: -5vw;
+  --left-end: 6vw;
+  --size: 1;
+  left: 23vw;
+  animation: move1 23s linear -9s infinite;
+}
+
+.snow:nth-child(88) {
+  --left-ini: 1vw;
+  --left-end: -2vw;
+  --size: 1;
+  left: 29vw;
+  animation: move1 17s linear -7s infinite;
+}
+
+.snow:nth-child(89) {
+  --left-ini: -7vw;
+  --left-end: 8vw;
+  --size: 3;
+  left: 93vw;
+  animation: move1 21s linear -4s infinite;
+}
+
+.snow:nth-child(90) {
+  --left-ini: -9vw;
+  --left-end: 7vw;
+  --size: 1;
+  left: 91vw;
+  animation: move1 12s linear -10s infinite;
+}
+
+.snow:nth-child(91) {
+  --left-ini: 5vw;
+  --left-end: 4vw;
+  --size: 2;
+  left: 66vw;
+  animation: move1 19s linear -6s infinite;
+}
+
+.snow:nth-child(92) {
+  --left-ini: -8vw;
+  --left-end: 3vw;
+  --size: 3;
+  left: 43vw;
+  animation: move1 20s linear -8s infinite;
+}
+
+.snow:nth-child(93) {
+  --left-ini: 6vw;
+  --left-end: 3vw;
+  --size: 3;
+  left: 87vw;
+  animation: move1 20s linear -1s infinite;
+}
+
+.snow:nth-child(94) {
+  --left-ini: -9vw;
+  --left-end: -2vw;
+  --size: 2;
+  left: 86vw;
+  animation: move1 9s linear -10s infinite;
+}
+
+.snow:nth-child(95) {
+  --left-ini: 1vw;
+  --left-end: -1vw;
+  --size: 2;
+  left: 65vw;
+  animation: move1 27s linear -1s infinite;
+}
+
+.snow:nth-child(96) {
+  --left-ini: -2vw;
+  --left-end: 2vw;
+  --size: 1;
+  left: 15vw;
+  animation: move1 10s linear -2s infinite;
+}
+
+.snow:nth-child(97) {
+  --left-ini: -6vw;
+  --left-end: 0vw;
+  --size: 1;
+  left: 41vw;
+  animation: move1 23s linear -1s infinite;
+}
+
+.snow:nth-child(98) {
+  --left-ini: 9vw;
+  --left-end: 7vw;
+  --size: 3;
+  left: 66vw;
+  animation: move1 18s linear -6s infinite;
+}
+
+.snow:nth-child(99) {
+  --left-ini: 0vw;
+  --left-end: 4vw;
+  --size: 3;
+  left: 99vw;
+  animation: move1 18s linear -2s infinite;
+}
+
+.snow:nth-child(100) {
+  --left-ini: 7vw;
+  --left-end: -1vw;
+  --size: 3;
+  left: 27vw;
+  animation: move1 16s linear -9s infinite;
+}
+
+.snow:nth-child(101) {
+  --left-ini: 8vw;
+  --left-end: 4vw;
+  --size: 1;
+  left: 15vw;
+  animation: move1 23s linear -6s infinite;
+}
+
+.snow:nth-child(102) {
+  --left-ini: 1vw;
+  --left-end: -8vw;
+  --size: 3;
+  left: 37vw;
+  animation: move1 23s linear -2s infinite;
+}
+
+.snow:nth-child(103) {
+  --left-ini: -4vw;
+  --left-end: 7vw;
+  --size: 2;
+  left: 68vw;
+  animation: move1 16s linear -1s infinite;
+}
+
+.snow:nth-child(104) {
+  --left-ini: -2vw;
+  --left-end: 4vw;
+  --size: 3;
+  left: 43vw;
+  animation: move1 22s linear -2s infinite;
+}
+
+.snow:nth-child(105) {
+  --left-ini: 5vw;
+  --left-end: 9vw;
+  --size: 2;
+  left: 20vw;
+  animation: move1 28s linear -7s infinite;
+}
+
+.snow:nth-child(106) {
+  --left-ini: 3vw;
+  --left-end: -1vw;
+  --size: 2;
+  left: 64vw;
+  animation: move1 27s linear -4s infinite;
+}
+
+.snow:nth-child(107) {
+  --left-ini: -1vw;
+  --left-end: -8vw;
+  --size: 1;
+  left: 68vw;
+  animation: move1 10s linear -7s infinite;
+}
+
+.snow:nth-child(108) {
+  --left-ini: 9vw;
+  --left-end: 9vw;
+  --size: 3;
+  left: 15vw;
+  animation: move1 9s linear -7s infinite;
+}
+
+.snow:nth-child(109) {
+  --left-ini: 4vw;
+  --left-end: 3vw;
+  --size: 3;
+  left: 74vw;
+  animation: move1 19s linear -5s infinite;
+}
+
+.snow:nth-child(110) {
+  --left-ini: -8vw;
+  --left-end: 3vw;
+  --size: 2;
+  left: 72vw;
+  animation: move1 17s linear -3s infinite;
+}
+
+.snow:nth-child(111) {
+  --left-ini: 8vw;
+  --left-end: 6vw;
+  --size: 2;
+  left: 50vw;
+  animation: move1 12s linear -5s infinite;
+}
+
+.snow:nth-child(112) {
+  --left-ini: -6vw;
+  --left-end: 2vw;
+  --size: 2;
+  left: 60vw;
+  animation: move1 9s linear -7s infinite;
+}
+
+.snow:nth-child(113) {
+  --left-ini: -4vw;
+  --left-end: -5vw;
+  --size: 2;
+  left: 90vw;
+  animation: move1 10s linear -4s infinite;
+}
+
+.snow:nth-child(114) {
+  --left-ini: 1vw;
+  --left-end: -1vw;
+  --size: 2;
+  left: 4vw;
+  animation: move1 27s linear -7s infinite;
+}
+
+.snow:nth-child(115) {
+  --left-ini: 2vw;
+  --left-end: 5vw;
+  --size: 3;
+  left: 63vw;
+  animation: move1 11s linear -7s infinite;
+}
+
+.snow:nth-child(116) {
+  --left-ini: -2vw;
+  --left-end: 1vw;
+  --size: 2;
+  left: 25vw;
+  animation: move1 23s linear -8s infinite;
+}
+
+.snow:nth-child(117) {
+  --left-ini: -2vw;
+  --left-end: 1vw;
+  --size: 3;
+  left: 85vw;
+  animation: move1 18s linear -1s infinite;
+}
+
+.snow:nth-child(118) {
+  --left-ini: 5vw;
+  --left-end: 3vw;
+  --size: 1;
+  left: 29vw;
+  animation: move1 20s linear -3s infinite;
+}
+
+.snow:nth-child(119) {
+  --left-ini: 2vw;
+  --left-end: 9vw;
+  --size: 2;
+  left: 44vw;
+  animation: move1 26s linear -10s infinite;
+}
+
+.snow:nth-child(120) {
+  --left-ini: 1vw;
+  --left-end: -4vw;
+  --size: 2;
+  left: 32vw;
+  animation: move1 22s linear -7s infinite;
+}
+
+.snow:nth-child(121) {
+  --left-ini: 3vw;
+  --left-end: 7vw;
+  --size: 1;
+  left: 31vw;
+  animation: move1 26s linear -4s infinite;
+}
+
+.snow:nth-child(122) {
+  --left-ini: 2vw;
+  --left-end: -3vw;
+  --size: 1;
+  left: 6vw;
+  animation: move1 10s linear -4s infinite;
+}
+
+.snow:nth-child(123) {
+  --left-ini: -3vw;
+  --left-end: -9vw;
+  --size: 1;
+  left: 90vw;
+  animation: move1 16s linear -4s infinite;
+}
+
+.snow:nth-child(124) {
+  --left-ini: 2vw;
+  --left-end: -6vw;
+  --size: 1;
+  left: 73vw;
+  animation: move1 19s linear -10s infinite;
+}
+
+.snow:nth-child(125) {
+  --left-ini: 10vw;
+  --left-end: -9vw;
+  --size: 3;
+  left: 69vw;
+  animation: move1 23s linear -10s infinite;
+}
+
+.snow:nth-child(126) {
+  --left-ini: 5vw;
+  --left-end: -8vw;
+  --size: 2;
+  left: 84vw;
+  animation: move1 18s linear -8s infinite;
+}
+
+.snow:nth-child(127) {
+  --left-ini: -2vw;
+  --left-end: -3vw;
+  --size: 3;
+  left: 98vw;
+  animation: move1 23s linear -1s infinite;
+}
+
+.snow:nth-child(128) {
+  --left-ini: 6vw;
+  --left-end: 8vw;
+  --size: 1;
+  left: 87vw;
+  animation: move1 13s linear -5s infinite;
+}
+
+.snow:nth-child(129) {
+  --left-ini: 7vw;
+  --left-end: -5vw;
+  --size: 1;
+  left: 82vw;
+  animation: move1 14s linear -6s infinite;
+}
+
+.snow:nth-child(130) {
+  --left-ini: 7vw;
+  --left-end: 10vw;
+  --size: 2;
+  left: 11vw;
+  animation: move1 13s linear -8s infinite;
+}
+
+.snow:nth-child(131) {
+  --left-ini: -6vw;
+  --left-end: 4vw;
+  --size: 2;
+  left: 98vw;
+  animation: move1 19s linear -2s infinite;
+}
+
+.snow:nth-child(132) {
+  --left-ini: 6vw;
+  --left-end: -7vw;
+  --size: 1;
+  left: 56vw;
+  animation: move1 21s linear -5s infinite;
+}
+
+.snow:nth-child(133) {
+  --left-ini: 1vw;
+  --left-end: -5vw;
+  --size: 3;
+  left: 43vw;
+  animation: move1 20s linear -10s infinite;
+}
+
+.snow:nth-child(134) {
+  --left-ini: -7vw;
+  --left-end: -1vw;
+  --size: 1;
+  left: 29vw;
+  animation: move1 19s linear -4s infinite;
+}
+
+.snow:nth-child(135) {
+  --left-ini: -9vw;
+  --left-end: 10vw;
+  --size: 3;
+  left: 37vw;
+  animation: move1 13s linear -2s infinite;
+}
+
+.snow:nth-child(136) {
+  --left-ini: -3vw;
+  --left-end: -8vw;
+  --size: 3;
+  left: 66vw;
+  animation: move1 19s linear -7s infinite;
+}
+
+.snow:nth-child(137) {
+  --left-ini: 8vw;
+  --left-end: 8vw;
+  --size: 2;
+  left: 65vw;
+  animation: move1 28s linear -10s infinite;
+}
+
+.snow:nth-child(138) {
+  --left-ini: 8vw;
+  --left-end: 3vw;
+  --size: 1;
+  left: 94vw;
+  animation: move1 19s linear -1s infinite;
+}
+
+.snow:nth-child(139) {
+  --left-ini: -3vw;
+  --left-end: 3vw;
+  --size: 2;
+  left: 41vw;
+  animation: move1 13s linear -8s infinite;
+}
+
+.snow:nth-child(140) {
+  --left-ini: 1vw;
+  --left-end: 4vw;
+  --size: 3;
+  left: 94vw;
+  animation: move1 23s linear -8s infinite;
+}
+
+.snow:nth-child(141) {
+  --left-ini: 9vw;
+  --left-end: 3vw;
+  --size: 1;
+  left: 73vw;
+  animation: move1 26s linear -1s infinite;
+}
+
+.snow:nth-child(142) {
+  --left-ini: -9vw;
+  --left-end: 10vw;
+  --size: 2;
+  left: 71vw;
+  animation: move1 10s linear -9s infinite;
+}
+
+.snow:nth-child(143) {
+  --left-ini: -5vw;
+  --left-end: -7vw;
+  --size: 1;
+  left: 30vw;
+  animation: move1 18s linear -10s infinite;
+}
+
+.snow:nth-child(144) {
+  --left-ini: -5vw;
+  --left-end: 7vw;
+  --size: 2;
+  left: 43vw;
+  animation: move1 21s linear -2s infinite;
+}
+
+.snow:nth-child(145) {
+  --left-ini: -3vw;
+  --left-end: 2vw;
+  --size: 1;
+  left: 75vw;
+  animation: move1 9s linear -9s infinite;
+}
+
+.snow:nth-child(146) {
+  --left-ini: -2vw;
+  --left-end: 9vw;
+  --size: 2;
+  left: 92vw;
+  animation: move1 16s linear -5s infinite;
+}
+
+.snow:nth-child(147) {
+  --left-ini: -5vw;
+  --left-end: 3vw;
+  --size: 3;
+  left: 37vw;
+  animation: move1 9s linear -6s infinite;
+}
+
+.snow:nth-child(148) {
+  --left-ini: -5vw;
+  --left-end: 2vw;
+  --size: 2;
+  left: 38vw;
+  animation: move1 19s linear -2s infinite;
+}
+
+.snow:nth-child(149) {
+  --left-ini: -3vw;
+  --left-end: 8vw;
+  --size: 3;
+  left: 79vw;
+  animation: move1 27s linear -7s infinite;
+}
+
+.snow:nth-child(150) {
+  --left-ini: 2vw;
+  --left-end: 1vw;
+  --size: 1;
+  left: 77vw;
+  animation: move1 27s linear -3s infinite;
+}
+
+.snow:nth-child(151) {
+  --left-ini: 8vw;
+  --left-end: 2vw;
+  --size: 1;
+  left: 61vw;
+  animation: move1 16s linear -8s infinite;
+}
+
+.snow:nth-child(152) {
+  --left-ini: 1vw;
+  --left-end: 4vw;
+  --size: 2;
+  left: 54vw;
+  animation: move1 27s linear -2s infinite;
+}
+
+.snow:nth-child(153) {
+  --left-ini: 10vw;
+  --left-end: 0vw;
+  --size: 1;
+  left: 35vw;
+  animation: move1 10s linear -1s infinite;
+}
+
+.snow:nth-child(154) {
+  --left-ini: 7vw;
+  --left-end: -5vw;
+  --size: 2;
+  left: 55vw;
+  animation: move1 17s linear -7s infinite;
+}
+
+.snow:nth-child(155) {
+  --left-ini: -2vw;
+  --left-end: -6vw;
+  --size: 3;
+  left: 22vw;
+  animation: move1 25s linear -5s infinite;
+}
+
+.snow:nth-child(156) {
+  --left-ini: -2vw;
+  --left-end: 5vw;
+  --size: 3;
+  left: 67vw;
+  animation: move1 23s linear -1s infinite;
+}
+
+.snow:nth-child(157) {
+  --left-ini: -9vw;
+  --left-end: -1vw;
+  --size: 1;
+  left: 2vw;
+  animation: move1 28s linear -4s infinite;
+}
+
+.snow:nth-child(158) {
+  --left-ini: 1vw;
+  --left-end: 1vw;
+  --size: 3;
+  left: 89vw;
+  animation: move1 21s linear -2s infinite;
+}
+
+.snow:nth-child(159) {
+  --left-ini: 8vw;
+  --left-end: -4vw;
+  --size: 2;
+  left: 40vw;
+  animation: move1 11s linear -3s infinite;
+}
+
+.snow:nth-child(160) {
+  --left-ini: -7vw;
+  --left-end: 8vw;
+  --size: 3;
+  left: 37vw;
+  animation: move1 15s linear -4s infinite;
+}
+
+.snow:nth-child(161) {
+  --left-ini: -1vw;
+  --left-end: 10vw;
+  --size: 2;
+  left: 94vw;
+  animation: move1 17s linear -10s infinite;
+}
+
+.snow:nth-child(162) {
+  --left-ini: -8vw;
+  --left-end: 8vw;
+  --size: 3;
+  left: 84vw;
+  animation: move1 16s linear -8s infinite;
+}
+
+.snow:nth-child(163) {
+  --left-ini: -7vw;
+  --left-end: 5vw;
+  --size: 3;
+  left: 75vw;
+  animation: move1 11s linear -2s infinite;
+}
+
+.snow:nth-child(164) {
+  --left-ini: 10vw;
+  --left-end: -6vw;
+  --size: 2;
+  left: 58vw;
+  animation: move1 19s linear -6s infinite;
+}
+
+.snow:nth-child(165) {
+  --left-ini: 3vw;
+  --left-end: 9vw;
+  --size: 3;
+  left: 38vw;
+  animation: move1 19s linear -4s infinite;
+}
+
+.snow:nth-child(166) {
+  --left-ini: 7vw;
+  --left-end: 6vw;
+  --size: 3;
+  left: 94vw;
+  animation: move1 10s linear -6s infinite;
+}
+
+.snow:nth-child(167) {
+  --left-ini: -1vw;
+  --left-end: -1vw;
+  --size: 3;
+  left: 89vw;
+  animation: move1 20s linear -4s infinite;
+}
+
+.snow:nth-child(168) {
+  --left-ini: -3vw;
+  --left-end: 4vw;
+  --size: 1;
+  left: 76vw;
+  animation: move1 23s linear -6s infinite;
+}
+
+.snow:nth-child(169) {
+  --left-ini: 2vw;
+  --left-end: 0vw;
+  --size: 3;
+  left: 37vw;
+  animation: move1 9s linear -2s infinite;
+}
+
+.snow:nth-child(170) {
+  --left-ini: 10vw;
+  --left-end: -9vw;
+  --size: 3;
+  left: 51vw;
+  animation: move1 15s linear -1s infinite;
+}
+
+.snow:nth-child(171) {
+  --left-ini: 4vw;
+  --left-end: -1vw;
+  --size: 1;
+  left: 40vw;
+  animation: move1 9s linear -8s infinite;
+}
+
+.snow:nth-child(172) {
+  --left-ini: 8vw;
+  --left-end: -2vw;
+  --size: 2;
+  left: 64vw;
+  animation: move1 18s linear -5s infinite;
+}
+
+.snow:nth-child(173) {
+  --left-ini: 10vw;
+  --left-end: 10vw;
+  --size: 3;
+  left: 26vw;
+  animation: move1 16s linear -3s infinite;
+}
+
+.snow:nth-child(174) {
+  --left-ini: -5vw;
+  --left-end: 5vw;
+  --size: 2;
+  left: 85vw;
+  animation: move1 14s linear -9s infinite;
+}
+
+.snow:nth-child(175) {
+  --left-ini: -1vw;
+  --left-end: -5vw;
+  --size: 1;
+  left: 91vw;
+  animation: move1 19s linear -1s infinite;
+}
+
+.snow:nth-child(176) {
+  --left-ini: -7vw;
+  --left-end: 0vw;
+  --size: 2;
+  left: 57vw;
+  animation: move1 13s linear -3s infinite;
+}
+
+.snow:nth-child(177) {
+  --left-ini: -8vw;
+  --left-end: 3vw;
+  --size: 2;
+  left: 21vw;
+  animation: move1 9s linear -6s infinite;
+}
+
+.snow:nth-child(178) {
+  --left-ini: -8vw;
+  --left-end: 2vw;
+  --size: 2;
+  left: 53vw;
+  animation: move1 13s linear -3s infinite;
+}
+
+.snow:nth-child(179) {
+  --left-ini: -8vw;
+  --left-end: -7vw;
+  --size: 3;
+  left: 46vw;
+  animation: move1 12s linear -3s infinite;
+}
+
+.snow:nth-child(180) {
+  --left-ini: -3vw;
+  --left-end: 1vw;
+  --size: 1;
+  left: 35vw;
+  animation: move1 15s linear -7s infinite;
+}
+
+.snow:nth-child(181) {
+  --left-ini: -1vw;
+  --left-end: 10vw;
+  --size: 1;
+  left: 89vw;
+  animation: move1 12s linear -2s infinite;
+}
+
+.snow:nth-child(182) {
+  --left-ini: 0vw;
+  --left-end: -8vw;
+  --size: 1;
+  left: 58vw;
+  animation: move1 13s linear -6s infinite;
+}
+
+.snow:nth-child(183) {
+  --left-ini: -3vw;
+  --left-end: 7vw;
+  --size: 2;
+  left: 73vw;
+  animation: move1 23s linear -8s infinite;
+}
+
+.snow:nth-child(184) {
+  --left-ini: -2vw;
+  --left-end: -5vw;
+  --size: 2;
+  left: 98vw;
+  animation: move1 23s linear -4s infinite;
+}
+
+.snow:nth-child(185) {
+  --left-ini: 6vw;
+  --left-end: -3vw;
+  --size: 1;
+  left: 58vw;
+  animation: move1 11s linear -4s infinite;
+}
+
+.snow:nth-child(186) {
+  --left-ini: 2vw;
+  --left-end: -2vw;
+  --size: 1;
+  left: 1vw;
+  animation: move1 26s linear -3s infinite;
+}
+
+.snow:nth-child(187) {
+  --left-ini: 10vw;
+  --left-end: 0vw;
+  --size: 2;
+  left: 18vw;
+  animation: move1 16s linear -7s infinite;
+}
+
+.snow:nth-child(188) {
+  --left-ini: 5vw;
+  --left-end: 10vw;
+  --size: 2;
+  left: 52vw;
+  animation: move1 13s linear -2s infinite;
+}
+
+.snow:nth-child(189) {
+  --left-ini: 6vw;
+  --left-end: 8vw;
+  --size: 2;
+  left: 55vw;
+  animation: move1 17s linear -10s infinite;
+}
+
+.snow:nth-child(190) {
+  --left-ini: -7vw;
+  --left-end: 2vw;
+  --size: 3;
+  left: 50vw;
+  animation: move1 9s linear -8s infinite;
+}
+
+.snow:nth-child(191) {
+  --left-ini: 10vw;
+  --left-end: 8vw;
+  --size: 2;
+  left: 26vw;
+  animation: move1 22s linear -2s infinite;
+}
+
+.snow:nth-child(192) {
+  --left-ini: -4vw;
+  --left-end: -4vw;
+  --size: 1;
+  left: 39vw;
+  animation: move1 12s linear -9s infinite;
+}
+
+.snow:nth-child(193) {
+  --left-ini: 8vw;
+  --left-end: -5vw;
+  --size: 3;
+  left: 85vw;
+  animation: move1 16s linear -3s infinite;
+}
+
+.snow:nth-child(194) {
+  --left-ini: 1vw;
+  --left-end: 10vw;
+  --size: 3;
+  left: 60vw;
+  animation: move1 10s linear -6s infinite;
+}
+
+.snow:nth-child(195) {
+  --left-ini: -5vw;
+  --left-end: 8vw;
+  --size: 3;
+  left: 92vw;
+  animation: move1 19s linear -7s infinite;
+}
+
+.snow:nth-child(196) {
+  --left-ini: 8vw;
+  --left-end: 9vw;
+  --size: 2;
+  left: 71vw;
+  animation: move1 19s linear -2s infinite;
+}
+
+.snow:nth-child(197) {
+  --left-ini: -6vw;
+  --left-end: 0vw;
+  --size: 1;
+  left: 29vw;
+  animation: move1 9s linear -6s infinite;
+}
+
+.snow:nth-child(198) {
+  --left-ini: 4vw;
+  --left-end: 3vw;
+  --size: 1;
+  left: 91vw;
+  animation: move1 17s linear -6s infinite;
+}
+
+.snow:nth-child(199) {
+  --left-ini: -8vw;
+  --left-end: -8vw;
+  --size: 2;
+  left: 67vw;
+  animation: move1 9s linear -5s infinite;
+}
+
+.snow:nth-child(200) {
+  --left-ini: 0vw;
+  --left-end: 3vw;
+  --size: 2;
+  left: 68vw;
+  animation: move1 17s linear -1s infinite;
+}
+
+.snow:nth-child(201) {
+  --left-ini: -10vw;
+  --left-end: -15vw;
+  --size: 1.3;
+  left: 80vw;
+  animation: move1 20s linear -5s infinite;
+}
+
+.snow:nth-child(202) {
+  --left-ini: 5vw;
+  --left-end: -8vw;
+  --size: 1.2;
+  left: 40vw;
+  animation: move1 18s linear -7s infinite;
+}
+
+.snow:nth-child(203) {
+  --left-ini: -3vw;
+  --left-end: 7vw;
+  --size: 1.5;
+  left: 20vw;
+  animation: move1 25s linear -3s infinite;
+}
+
+.snow:nth-child(204) {
+  --left-ini: 8vw;
+  --left-end: -6vw;
+  --size: 1;
+  left: 60vw;
+  animation: move1 15s linear -8s infinite;
+}
+
+.snow:nth-child(205) {
+  --left-ini: -6vw;
+  --left-end: 9vw;
+  --size: 1.7;
+  left: 30vw;
+  animation: move1 22s linear -2s infinite;
+}
+
+.snow:nth-child(206) {
+  --left-ini: 3vw;
+  --left-end: -5vw;
+  --size: 1.2;
+  left: 70vw;
+  animation: move1 17s linear -4s infinite;
+}
+
+.snow:nth-child(207) {
+  --left-ini: -8vw;
+  --left-end: 6vw;
+  --size: 1.5;
+  left: 30vw;
+  animation: move1 23s linear -6s infinite;
+}
+
+.snow:nth-child(208) {
+  --left-ini: 7vw;
+  --left-end: -4vw;
+  --size: 1.8;
+  left: 50vw;
+  animation: move1 20s linear -8s infinite;
+}
+
+.snow:nth-child(209) {
+  --left-ini: -5vw;
+  --left-end: 8vw;
+  --size: 1.3;
+  left: 40vw;
+  animation: move1 15s linear -3s infinite;
+}
+
+.snow:nth-child(210) {
+  --left-ini: 2vw;
+  --left-end: -6vw;
+  --size: 1.6;
+  left: 60vw;
+  animation: move1 22s linear -5s infinite;
+}
+
+.snow:nth-child(211) {
+  --left-ini: -4vw;
+  --left-end: 5vw;
+  --size: 1.2;
+  left: 25vw;
+  animation: move1 18s linear -7s infinite;
+}
+
+.snow:nth-child(212) {
+  --left-ini: 6vw;
+  --left-end: -7vw;
+  --size: 1.7;
+  left: 80vw;
+  animation: move1 19s linear -2s infinite;
+}
+
+.snow:nth-child(213) {
+  --left-ini: -3vw;
+  --left-end: 9vw;
+  --size: 1.4;
+  left: 35vw;
+  animation: move1 20s linear -6s infinite;
+}
+
+.snow:nth-child(214) {
+  --left-ini: 8vw;
+  --left-end: -5vw;
+  --size: 1.1;
+  left: 55vw;
+  animation: move1 16s linear -4s infinite;
+}
+
+.snow:nth-child(215) {
+  --left-ini: -6vw;
+  --left-end: 7vw;
+  --size: 1.5;
+  left: 45vw;
+  animation: move1 21s linear -8s infinite;
+}
+
+.snow:nth-child(216) {
+  --left-ini: 5vw;
+  --left-end: -8vw;
+  --size: 1.8;
+  left: 75vw;
+  animation: move1 24s linear -3s infinite;
+}
+
+.snow:nth-child(217) {
+  --left-ini: -7vw;
+  --left-end: 6vw;
+  --size: 1.2;
+  left: 20vw;
+  animation: move1 19s linear -7s infinite;
+}
+
+.snow:nth-child(218) {
+  --left-ini: 4vw;
+  --left-end: -9vw;
+  --size: 1.6;
+  left: 65vw;
+  animation: move1 22s linear -5s infinite;
+}
+
+.snow:nth-child(219) {
+  --left-ini: -2vw;
+  --left-end: 8vw;
+  --size: 1.3;
+  left: 30vw;
+  animation: move1 17s linear -3s infinite;
+}
+
+.snow:nth-child(220) {
+  --left-ini: 6vw;
+  --left-end: -4vw;
+  --size: 1.7;
+  left: 50vw;
+  animation: move1 21s linear -6s infinite;
+}
+
+.snow:nth-child(221) {
+  --left-ini: -5vw;
+  --left-end: 7vw;
+  --size: 1.2;
+  left: 40vw;
+  animation: move1 15s linear -2s infinite;
+}
+
+.snow:nth-child(222) {
+  --left-ini: 2vw;
+  --left-end: -8vw;
+  --size: 1.5;
+  left: 60vw;
+  animation: move1 24s linear -8s infinite;
+}
+
+.snow:nth-child(223) {
+  --left-ini: -7vw;
+  --left-end: 5vw;
+  --size: 1.8;
+  left: 35vw;
+  animation: move1 18s linear -4s infinite;
+}
+
+.snow:nth-child(224) {
+  --left-ini: 4vw;
+  --left-end: -6vw;
+  --size: 1.3;
+  left: 70vw;
+  animation: move1 20s linear -7s infinite;
+}
+
+.snow:nth-child(225) {
+  --left-ini: -3vw;
+  --left-end: 9vw;
+  --size: 1.6;
+  left: 25vw;
+  animation: move1 19s linear -3s infinite;
+}
+
+.snow:nth-child(226) {
+  --left-ini: 8vw;
+  --left-end: -5vw;
+  --size: 1.1;
+  left: 55vw;
+  animation: move1 23s linear -6s infinite;
+}
+
+.snow:nth-child(227) {
+  --left-ini: -6vw;
+  --left-end: 8vw;
+  --size: 1.5;
+  left: 45vw;
+  animation: move1 16s linear -2s infinite;
+}
+
+.snow:nth-child(228) {
+  --left-ini: 5vw;
+  --left-end: -7vw;
+  --size: 1.8;
+  left: 75vw;
+  animation: move1 25s linear -5s infinite;
+}
+
+.snow:nth-child(229) {
+  --left-ini: -8vw;
+  --left-end: 4vw;
+  --size: 1.2;
+  left: 30vw;
+  animation: move1 17s linear -7s infinite;
+}
+
+.snow:nth-child(230) {
+  --left-ini: 3vw;
+  --left-end: -9vw;
+  --size: 1.6;
+  left: 65vw;
+  animation: move1 22s linear -5s infinite;
+}
