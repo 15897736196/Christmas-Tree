@@ -5,12 +5,19 @@
   <meta charset="UTF-8">
   <title>Christmas tree for Chen Tao</title>
   <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      overflow: hidden;
+    }
+
     body {
-      transform: translate3d(0, 0, 0);
+      overflow: hidden;
       backface-visibility: hidden;
       will-change: transform;
-
-      overflow: hidden;
       font-family: Helvetica, Arial, sans-serif;
       color: #fff;
       font-size: 11px;
@@ -196,14 +203,14 @@
       left: 350px;
       top: 0px;
     }
-    
+
     .title {
       font-size: 72px;
       font-family: 'Times New Roman', Times, serif;
       /* font-weight: bold; */
       width: 100%;
       text-align: center;
-      top: 250px;
+      top: 200px;
       /* word-spacing: 50px; */
       position: relative;
     }
@@ -212,34 +219,41 @@
 </head>
 
 <body>
-  <script>
-    const body = document.body
-    // const contain = document.getElementById('tree');
-    // 循环添加100个子元素
-    for (var i = 0; i < 230; i++) {
-      // 创建一个新的div元素
-      var newDiv = document.createElement("div");
-      // 设置class属性
-      newDiv.className = "snow";
-      if (i % 23 === 0) {
-        newDiv.style.zIndex = 99
-      }
-      // 将新创建的div添加到父元素中
-      body.appendChild(newDiv);
-    }
-  </script>
-  <div id="tree">
-    <div class="star-container">
-      <div class="star"></div>
+
+    <div id="snow_container"></div>
+    <div id="tree">
+      <div class="star-container">
+        <div class="star"></div>
+      </div>
     </div>
-  </div>
-  <div class="title">Merry Christmas (◕‿-) ✧</div>
-  <audio id="audio" src="./MerryChristmas.mp3" controls loop autoplay style="margin: 300px auto;display: block; opacity: 0.3;">
-  </audio>
+    <div class="title">Merry Christmas (◕‿-) ✧</div>
+    <audio id="audio" src="./MerryChristmas.mp3" controls loop autoplay
+      style="margin: 230px auto;display: block; opacity: 0.3;">
+    </audio>
+
 </body>
 
 </html>
-
+<script>
+  function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+  const snow_container = document.getElementById("snow_container");
+  // 循环添加子元素
+  var fragment = document.createDocumentFragment();
+  for (var i = 0; i < 230; i++) {
+    // 创建一个新的div元素
+    var snow = document.createElement("div");
+    // 设置class属性
+    snow.className = "snow";
+    if (i % 18 === 0) {
+      snow.style.zIndex = 99
+    }
+    // 将新创建的div添加到父元素中
+    fragment.appendChild(snow);
+  }
+  snow_container.appendChild(fragment);
+</script>
 <script type="text/javascript">
   var greeting = [
     'printf("{0}");',
@@ -321,13 +335,13 @@
   var width = 800;
   var height = 1000;
   var tree = document.getElementById("tree");
-  tree.style.marginTop = (height / 3) - 100 + 'px';
+  tree.style.marginTop = (height / 3) - 150 + 'px';
   tree.style.width = width + 'px';
   tree.style.height = height + 'px';
   //tree.style.margin = "auto";
   //tree.style.background = "#fefefe";
-
-  for (i = 0; i < 450; i++) {
+  var fragment = document.createDocumentFragment();
+  for (i = 0; i < 500; i++) {
     var top_margin = 70;
     var x = width / 2;
     var y = Math.round(Math.random() * height) + top_margin;
@@ -341,7 +355,8 @@
     var div = createBranch(elementWidth, elementHeight);
 
     transform(div, 'translate3d(' + x + 'px, ' + y + 'px, 0px) rotateX(' + rx + 'deg) rotateY(' + ry + 'deg) rotateZ(' + rz + 'deg)');
-    tree.appendChild(div);
+    fragment.appendChild(div);
   }
+  tree.appendChild(fragment);
 
 </script>
