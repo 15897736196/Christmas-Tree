@@ -215,7 +215,7 @@
       position: relative;
     }
   </style>
-  <link rel="stylesheet" type="text/css" href="./snow.css">
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="./snow.css">
 </head>
 
 <body>
@@ -234,27 +234,7 @@
 </body>
 
 </html>
-<script>
-  function getRandom(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-  }
-  const snow_container = document.getElementById("snow_container");
-  // 循环添加子元素
-  var fragment = document.createDocumentFragment();
-  for (var i = 0; i < 230; i++) {
-    // 创建一个新的div元素
-    var snow = document.createElement("div");
-    // 设置class属性
-    snow.className = "snow";
-    if (i % 18 === 0) {
-      snow.style.zIndex = 99
-    }
-    // 将新创建的div添加到父元素中
-    fragment.appendChild(snow);
-  }
-  snow_container.appendChild(fragment);
-</script>
-<script type="text/javascript">
+<script async type="text/javascript">
   var greeting = [
     'printf("{0}");',
     'cout << "{0}" << endl;',
@@ -358,5 +338,24 @@
     fragment.appendChild(div);
   }
   tree.appendChild(fragment);
-
+</script>
+<script async type="text/javascript">
+  function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+  const snow_container = document.getElementById("snow_container");
+  // 循环添加子元素
+  var fragment = document.createDocumentFragment();
+  for (var i = 0; i < 230; i++) {
+    // 创建一个新的div元素
+    var snow = document.createElement("div");
+    // 设置class属性
+    snow.className = "snow";
+    if (i % 18 === 0) {
+      snow.style.zIndex = 99
+    }
+    // 将新创建的div添加到父元素中
+    fragment.appendChild(snow);
+  }
+  snow_container.appendChild(fragment);
 </script>
