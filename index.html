@@ -11,6 +11,7 @@
     }
 
     html {
+      /* overflow: scroll; */
       overflow: hidden;
     }
 
@@ -200,8 +201,8 @@
     }
 
     .star {
-      left: 350px;
-      top: 0px;
+      /* left: 350px; */
+      /* top: 0px; */
     }
 
     .title {
@@ -255,6 +256,7 @@
 
   var year = new Date().getFullYear() + 1;
   var str = [
+    "Hello Word !",
     "Merry Christmas!",
     "Happy New Year!",
     "Hello " + year + "!",
@@ -297,7 +299,6 @@
     div.setAttribute("id", "branch");
     div.setAttribute("class", "christmas");
     span.setAttribute("id", "text");
-
     span.appendChild(text);
     div.appendChild(span);
 
@@ -312,33 +313,44 @@
   }
 
 
-  var width = 800;
-  var height = 1000;
+  var height = window.innerHeight * 0.65
+  var width = height * 0.7
+  var star = document.getElementsByClassName("star")[0]
   var tree = document.getElementById("tree");
-  tree.style.marginTop = (height / 3) - 150 + 'px';
+  star.style.top = 0;
+  star.style.left = width * 0.5 - 50 + 'px';
+  tree.style.marginTop = height * 0.1 + 'px';
   tree.style.width = width + 'px';
   tree.style.height = height + 'px';
   //tree.style.margin = "auto";
   //tree.style.background = "#fefefe";
   var fragment = document.createDocumentFragment();
-  for (i = 0; i < 500; i++) {
+  var times = Math.floor((500 / 1270) * height)
+  console.log("🚀 ~ file: index.html:328 ~ times:", times)
+  var count = 0
+  var rotate = 0
+  for (i = 0; i < times; i++) {
     var top_margin = 70;
     var x = width / 2;
-    var y = Math.round(Math.random() * height) + top_margin;
+    var y = count + height/times + top_margin // Math.round(Math.random() * height) + top_margin;
+    count += height/times
     var rx = 0;
-    var ry = Math.random() * 360;
+    var ry = rotate// Math.random() * 360;
+    rotate = (getRandom(0, 90) + rotate) % 360
     var rz = 0;//-Math.random() * 15;
     var elementWidth = 15 + (((y - top_margin) / height) * width / 1.8);
     var elementHeight = 26;
-
-    //console.log(x, y, rx, ry, rz, elementWidth,  elementHeight)
     var div = createBranch(elementWidth, elementHeight);
-
     transform(div, 'translate3d(' + x + 'px, ' + y + 'px, 0px) rotateX(' + rx + 'deg) rotateY(' + ry + 'deg) rotateZ(' + rz + 'deg)');
     fragment.appendChild(div);
   }
   tree.appendChild(fragment);
+  var body = document.body
+  // var view = ((1- height / window.innerHeight) * 100).toFixed(2)
+  // console.log('view:', view)
+  body.style.perspectiveOrigin = `50% ${20}%`;
 </script>
+
 <script async type="text/javascript">
   function getRandom(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
