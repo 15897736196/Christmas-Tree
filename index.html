@@ -115,7 +115,6 @@
     #tree {
       margin: 0 auto;
       position: relative;
-
       -webkit-animation: spin 20s infinite linear;
       -moz-animation: spin 20s infinite linear;
       -ms-animation: spin 20s infinite linear;
@@ -220,18 +219,16 @@
 </head>
 
 <body>
-
-    <div id="snow_container"></div>
-    <div id="tree">
-      <div class="star-container">
-        <div class="star"></div>
-      </div>
+  <div id="snow_container"></div>
+  <div id="tree">
+    <div class="star-container">
+      <div class="star"></div>
     </div>
-    <div class="title">Merry Christmas (◕‿-) ✧</div>
-    <audio id="audio" src="./MerryChristmas.mp3" controls loop autoplay
-      style="margin: 230px auto;display: block; opacity: 0.3;">
-    </audio>
-
+  </div>
+  <div class="title">Merry Christmas (◕‿-) ✧</div>
+  <audio id="audio" src="./MerryChristmas.mp3" controls loop autoplay
+    style="margin: 230px auto;display: block; opacity: 0.3;">
+  </audio>
 </body>
 
 </html>
@@ -313,8 +310,8 @@
   }
 
 
-  var height = window.innerHeight * 0.6
-  var width = height * 0.7
+  var height = window.innerHeight * 0.65
+  var width = height * 0.75
   var star = document.getElementsByClassName("star")[0]
   var tree = document.getElementById("tree");
   star.style.top = 0;
@@ -325,14 +322,14 @@
   //tree.style.margin = "auto";
   //tree.style.background = "#fefefe";
   var fragment = document.createDocumentFragment();
-  var times = Math.floor((400 / 1270) * height)
+  var times = Math.floor((500 / 1270) * height)
   var count = 0
   var rotate = 0
-  var divided = height/times
+  var divided = height / times
   console.log(times, divided)
   var top_margin = 70;
   for (i = 0; i < times; i++) {
-    if(times - i <10){
+    if (times - i < 10) {
       divided = 0
     }
     var x = width / 2;
@@ -371,7 +368,7 @@
       snow.style.zIndex = 99
     }
     // 将新创建的div添加到父元素中
-    fragment.appendChild(snow);8
+    fragment.appendChild(snow);
   }
   snow_container.appendChild(fragment);
 </script>
