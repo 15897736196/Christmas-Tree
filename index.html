@@ -313,7 +313,7 @@
   }
 
 
-  var height = window.innerHeight * 0.65
+  var height = window.innerHeight * 0.6
   var width = height * 0.7
   var star = document.getElementsByClassName("star")[0]
   var tree = document.getElementById("tree");
@@ -363,7 +363,7 @@
     var snow = document.createElement("div");
     // 设置class属性
     snow.className = "snow";
-    if (i % 18 === 0) {
+    if (i % 12 === 0) {
       snow.style.zIndex = 99
     }
     // 将新创建的div添加到父元素中
