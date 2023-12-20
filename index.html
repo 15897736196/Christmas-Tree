@@ -325,7 +325,7 @@
   //tree.style.margin = "auto";
   //tree.style.background = "#fefefe";
   var fragment = document.createDocumentFragment();
-  var times = Math.floor((600 / 1270) * height)
+  var times = Math.floor((400 / 1270) * height)
   var count = 0
   var rotate = 0
   var divided = height/times
@@ -337,7 +337,7 @@
     count += divided
     var rx = 0;
     var ry = rotate// Math.random() * 360;
-    rotate = (getRandom(0, 90) + rotate) % 360
+    rotate = (getRandom(0, 100) + rotate) % 360
     var rz = 0;//-Math.random() * 15;
     var elementWidth = 15 + (((y - top_margin) / height) * width / 1.8);
     var elementHeight = 26;
@@ -368,7 +368,7 @@
       snow.style.zIndex = 99
     }
     // 将新创建的div添加到父元素中
-    fragment.appendChild(snow);
+    fragment.appendChild(snow);8
   }
   snow_container.appendChild(fragment);
 </script>
