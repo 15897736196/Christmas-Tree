@@ -313,7 +313,7 @@
   }
 
 
-  var height = window.innerHeight * 0.6
+  var height = window.innerHeight * 0.65
   var width = height * 0.7
   var star = document.getElementsByClassName("star")[0]
   var tree = document.getElementById("tree");
@@ -326,14 +326,15 @@
   //tree.style.background = "#fefefe";
   var fragment = document.createDocumentFragment();
   var times = Math.floor((500 / 1270) * height)
-  console.log("🚀 ~ file: index.html:328 ~ times:", times)
   var count = 0
   var rotate = 0
+  var divided = height/times - 0.1
+  console.log(times, divided)
+  var top_margin = 70;
   for (i = 0; i < times; i++) {
-    var top_margin = 70;
     var x = width / 2;
-    var y = count + height/times + top_margin // Math.round(Math.random() * height) + top_margin;
-    count += height/times
+    var y = count + divided + top_margin // Math.round(Math.random() * height) + top_margin;
+    count += divided
     var rx = 0;
     var ry = rotate// Math.random() * 360;
     rotate = (getRandom(0, 90) + rotate) % 360
