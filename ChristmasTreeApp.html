@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christmas tree for Chen Tao</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      overflow: hidden;
+    }
+
+    body {
+      position: relative;
+      overflow: hidden;
+      backface-visibility: hidden;
+      will-change: transform;
+      color: #fff;
+      font-size: 11px;
+      width: 100vw;
+      height: 100vh;
+      background: radial-gradient(ellipse at center, #c00 0%, #500 100%);
+      perspective: 5000px;
+      perspective-origin: 0 20%;
+    }
+
+    /*--- steal from Ant Design ----*/
+    .christmas {
+      background-image: url(data:image/png;base64,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);
+      background-repeat: no-repeat;
+      background-position: 50% -5px;
+      background-size: 64px;
+      opacity: 1;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotateY(0deg);
+      }
+      100% {
+        transform: rotateY(360deg);
+      }
+    }
+
+    #tree {
+      margin: 0 auto;
+      position: relative;
+      animation: spin 20s infinite linear;
+      transform-origin: 50% 0;
+      transform-style: preserve-3d;
+    }
+
+    #tree * {
+      position: absolute;
+      transform-origin: 0 0;
+    }
+
+    #branch {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    #text {
+      padding-top: 6px;
+      font-weight: bold;
+    }
+
+    .star {
+      border-color: #ffcc00 transparent transparent transparent;
+      border-style: solid;
+      border-top-width: 35.21127px;
+      border-right-width: 50px;
+      border-left-width: 50px;
+      height: 0;
+      margin-top: 35.21127px;
+      margin-bottom: 22.63581px;
+      position: relative;
+      width: 0;
+    }
+
+    .star:before,
+    .star:after {
+      border-color: #ffcc00 transparent transparent transparent;
+      border-style: solid;
+      border-top-width: 35.21127px;
+      border-right-width: 50px;
+      border-left-width: 50px;
+      content: '';
+      display: block;
+      height: 0;
+      left: -50px;
+      position: absolute;
+      top: -35.21127px;
+      width: 0;
+    }
+
+    .star:before {
+      transform: rotate(70deg);
+    }
+
+    .star:after {
+      transform: rotate(-70deg);
+    }
+
+    /* 添加发光效果到星星容器 */
+    .star-container {
+      filter: drop-shadow(0 -8px 10px rgb(255, 234, 0));
+    }
+
+    .title {
+      font-size: 72px;
+      width: 100%;
+      text-align: center;
+      top: 200px;
+      position: relative;
+    }
+
+    #banner1 {
+      opacity: 1;
+      position: fixed;
+      z-index: 9999;
+      top: 10%;
+      width: 100vh;
+      height: 10vh;
+      background-position: 50% 50%;
+      background-size: contain;
+      transform: rotate(50deg) translateY(2vh);
+    }
+
+    /* 雪花基础样式 - 从中心向外逐渐模糊的圆形 */
+    .snow {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      /* 使用径向渐变创建从中心白色到边缘透明的圆形 */
+      background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 30%, rgba(255, 255, 255, 0.4) 60%, rgba(255, 255, 255, 0) 100%);
+      border-radius: 50%;
+      /* 添加轻微模糊效果，增强朦胧感 */
+      filter: blur(0.5px);
+    }
+
+    @keyframes move1 {
+      0% {
+        transform: translate(var(--left-ini), -5vh) scale(var(--size));
+      }
+      100% {
+        transform: translate(var(--left-end), 100vh);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="snow_container"></div>
+  <!-- <div id="banner1"></div> -->
+  <div id="banner2"></div>
+  <div id="tree">
+    <div class="star-container">
+      <div class="star"></div>
+    </div>
+  </div>
+  <div class="title">Merry Christmas (◕‿-) ✧</div>
+  <script type="text/javascript">
+    'use strict';
+
+    // ==================== 默认配置对象 ====================
+    const DEFAULT_CONFIG = {
+      // 雪花配置
+      snow: {
+        count: 200,
+        sizeRange: { min: 1, max: 3 },
+        opacityRange: { min: 0.5, max: 1.0 },
+        durationRange: { min: 9, max: 28 },
+        delayRange: { min: 1, max: 10 },
+        leftIniRange: { min: -10, max: 10 },
+        leftEndRange: { min: -15, max: 10 },
+        leftRange: { min: 0, max: 100 },
+        zIndexInterval: 12,
+        baseSize: 8,
+        blur: 0.5
+      },
+      // 圣诞树配置
+      tree: {
+        heightRatio: 0.65,
+        widthRatio: 0.75,
+        topMarginRatio: 0.1,
+        topMargin: 70,
+        branchCountRatio: 430 / 1270,
+        lastLayersNoDivide: 10,
+        rotationDuration: 20,
+        starOffset: -50,
+        branchWidthBase: 15,
+        branchWidthRatio: 1.8,
+        branchHeight: 26,
+        rotationRange: { min: 20, max: 100 }
+      },
+      // 树枝配置
+      branch: {
+        greenColorRange: { min: 50, max: 250 },
+        otherColorRange: { min: 0, max: 50 }
+      },
+      // 文本配置
+      text: {
+        greetings: [
+          'printf("{0}");',
+          'cout << "{0}" << endl;',
+          'WriteLn("{0}");',
+          'System.out.println( "{0}" );',
+          'print "{0}"',
+          'fmt.Println("{0}");',
+          'echo "{0}"',
+          'say "{0}"',
+          'print("{0}");',
+          '(print "{0}")',
+          'PRINT "{0}"',
+          '<%= "{0}" %>',
+          'System.Console.WriteLine("{0}");',
+          'console.log("{0}");',
+          'document.write("{0}")'
+        ],
+        messages: [
+          "Merry Christmas!",
+          "Happy New Year!",
+          `Hello ${new Date().getFullYear() + 1}!`
+        ],
+        title: "Merry Christmas (◕‿-) ✧"
+      }
+    };
+
+    // ==================== 工具类 ====================
+    class Utils {
+      // 生成随机整数
+      static getRandom(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+      }
+
+      // 生成随机浮点数
+      static getRandomFloat(min, max, decimals = 1) {
+        const value = Math.random() * (max - min) + min;
+        return Math.round(value * Math.pow(10, decimals)) / Math.pow(10, decimals);
+      }
+
+      // 设置CSS transform属性
+      static setTransform(element, value) {
+        element.style.transform = value;
+      }
+
+      // 扩展String原型以支持格式化
+      static extendStringFormat() {
+        if (!String.prototype.format) {
+          String.prototype.format = function () {
+            const args = arguments;
+            return this.replace(/{(\d+)}/g, function (match, number) {
+              return typeof args[number] !== 'undefined' ? args[number] : match;
+            });
+          };
+        }
+      }
+    }
+
+    // ==================== 雪花生成器类 ====================
+    class SnowGenerator {
+      constructor(config) {
+        this.config = config;
+        this.configs = [];
+      }
+
+      // 生成单个雪花配置
+      generateConfig() {
+        const { snow } = this.config;
+        return {
+          leftIni: Utils.getRandom(snow.leftIniRange.min, snow.leftIniRange.max),
+          leftEnd: Utils.getRandom(snow.leftEndRange.min, snow.leftEndRange.max),
+          size: Utils.getRandomFloat(snow.sizeRange.min, snow.sizeRange.max, 1),
+          left: Utils.getRandom(snow.leftRange.min, snow.leftRange.max),
+          duration: Utils.getRandom(snow.durationRange.min, snow.durationRange.max),
+          delay: Utils.getRandom(snow.delayRange.min, snow.delayRange.max),
+          opacity: Utils.getRandomFloat(snow.opacityRange.min, snow.opacityRange.max, 2)
+        };
+      }
+
+      // 生成所有雪花配置
+      generateConfigs() {
+        this.configs = [];
+        for (let i = 0; i < this.config.snow.count; i++) {
+          this.configs.push(this.generateConfig());
+        }
+        return this.configs;
+      }
+
+      // 创建单个雪花元素
+      createSnowElement(config, index) {
+        const { snow } = this.config;
+        const snowElement = document.createElement("div");
+        snowElement.className = "snow";
+
+        // 使用CSS变量动态设置样式
+        snowElement.style.setProperty('--left-ini', `${config.leftIni}vw`);
+        snowElement.style.setProperty('--left-end', `${config.leftEnd}vw`);
+        snowElement.style.setProperty('--size', config.size);
+        snowElement.style.left = `${config.left}vw`;
+        snowElement.style.animation = `move1 ${config.duration}s linear -${config.delay}s infinite`;
+        snowElement.style.opacity = config.opacity;
+
+        // 设置zIndex
+        if (index % snow.zIndexInterval === 0) {
+          snowElement.style.zIndex = '99';
+        }
+
+        return snowElement;
+      }
+
+      // 初始化雪花
+      init(container) {
+        if (!container) return;
+
+        this.generateConfigs();
+        const fragment = document.createDocumentFragment();
+
+        this.configs.forEach((config, index) => {
+          const snowElement = this.createSnowElement(config, index);
+          fragment.appendChild(snowElement);
+        });
+
+        container.appendChild(fragment);
+      }
+    }
+
+    // ==================== 圣诞树生成器类 ====================
+    class TreeGenerator {
+      constructor(config) {
+        this.config = config;
+      }
+
+      // 创建树枝元素
+      createBranch(width, height) {
+        const { text, branch } = this.config;
+        const div = document.createElement('div');
+        const span = document.createElement('span');
+
+        // 随机选择问候语和消息
+        const greeting = text.greetings[Utils.getRandom(0, text.greetings.length - 1)];
+        const message = text.messages[Utils.getRandom(0, text.messages.length - 1)];
+        const textNode = document.createTextNode(greeting.format(message));
+
+        div.id = "branch";
+        div.className = "christmas";
+        span.id = "text";
+        span.appendChild(textNode);
+        div.appendChild(span);
+
+        // 设置尺寸
+        div.style.width = `${width}px`;
+        div.style.height = `${height}px`;
+
+        // 随机生成颜色
+        const green = Utils.getRandom(branch.greenColorRange.min, branch.greenColorRange.max);
+        const other = Utils.getRandom(branch.otherColorRange.min, branch.otherColorRange.max);
+        div.style.backgroundColor = `rgba(${other}, ${green}, ${other}, 1)`;
+
+        return div;
+      }
+
+      // 初始化圣诞树
+      init(container) {
+        if (!container) return;
+
+        const { tree } = this.config;
+        const height = window.innerHeight * tree.heightRatio;
+        const width = height * tree.widthRatio;
+        const star = container.querySelector(".star");
+        const treeElement = container;
+
+        // 设置星星位置
+        if (star) {
+          star.style.top = '0';
+          star.style.left = `${width * 0.5 + tree.starOffset}px`;
+        }
+
+        // 设置树容器样式
+        treeElement.style.marginTop = `${height * tree.topMarginRatio}px`;
+        treeElement.style.width = `${width}px`;
+        treeElement.style.height = `${height}px`;
+
+        // 计算树枝数量
+        const branchCount = Math.floor(tree.branchCountRatio * height);
+        const fragment = document.createDocumentFragment();
+        let count = 0;
+        let rotate = 0;
+        let divided = height / branchCount;
+
+        // 生成树枝
+        for (let i = 0; i < branchCount; i++) {
+          // 最后N层不分割
+          if (branchCount - i < tree.lastLayersNoDivide) {
+            divided = 0;
+          }
+
+          const x = width / 2;
+          const y = count + divided + tree.topMargin;
+          count += divided;
+
+          // 旋转角度
+          rotate = (Utils.getRandom(tree.rotationRange.min, tree.rotationRange.max) + rotate) % 360;
+
+          // 计算树枝宽度
+          const elementWidth = tree.branchWidthBase + (((y - tree.topMargin) / height) * width / tree.branchWidthRatio);
+          const elementHeight = tree.branchHeight;
+
+          // 创建树枝
+          const branchElement = this.createBranch(elementWidth, elementHeight);
+          Utils.setTransform(
+            branchElement,
+            `translate3d(${x}px, ${y}px, 0px) rotateX(0deg) rotateY(${rotate}deg) rotateZ(0deg)`
+          );
+          fragment.appendChild(branchElement);
+        }
+
+        treeElement.appendChild(fragment);
+        document.body.style.perspectiveOrigin = '50% 20%';
+      }
+    }
+
+    // ==================== 主应用类 ====================
+    class ChristmasApp {
+      constructor(config = DEFAULT_CONFIG) {
+        this.config = config;
+        this.snowGenerator = new SnowGenerator(config);
+        this.treeGenerator = new TreeGenerator(config);
+      }
+
+      // 初始化应用
+      init() {
+        // 扩展String原型
+        Utils.extendStringFormat();
+
+        // 初始化圣诞树
+        const treeContainer = document.getElementById("tree");
+        if (treeContainer) {
+          this.treeGenerator.init(treeContainer);
+        }
+
+        // 初始化雪花
+        const snowContainer = document.getElementById("snow_container");
+        if (snowContainer) {
+          this.snowGenerator.init(snowContainer);
+        }
+
+        // 设置标题
+        const titleElement = document.querySelector(".title");
+        if (titleElement) {
+          titleElement.textContent = this.config.text.title;
+        }
+      }
+    }
+
+    // ==================== 初始化 ====================
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => {
+        const app = new ChristmasApp();
+        app.init();
+      });
+    } else {
+      const app = new ChristmasApp();
+      app.init();
+    }
+  </script>
+</body>
+
+</html>
+
